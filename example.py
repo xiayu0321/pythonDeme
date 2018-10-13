@@ -34,4 +34,19 @@ missingno.matrix(data)
 #data = data.dropna(thresh=data.shape[0]*0.5,axis = 1)
 #data.dropna(axis = 0,how = 'all')
 print(data.fillna(0))
+print("统计重复记录数-----------")
+print(data.duplicated().sum())
+data.drop_duplicates()
+print("分离连续与离散-----------")
+data.columns
 
+id_col=['姓名']
+cat_col = ['学历','学校']
+cont_col=['成绩','能力']
+
+print (data[cat_col])
+print (data[cont_col])
+
+print("计算出现的频次----------")
+for i in cat_col:
+    print(pd.Series(data[i]).value_counts())
