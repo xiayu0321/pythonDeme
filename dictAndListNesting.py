@@ -38,7 +38,7 @@ for name in favorite_places:
 
 
 cities = {
-	'BeiJing':{'country':'China','population':21700000,'fact':'capital city of China'},
+	'BeiJing':{'country':'China','population':2170000k0,'fact':'capital city of China'},
 	'ShangHai':{'country':'China','population':24600000,'fact':'economy center of China'},
 	'Seoul':{'country':'Korea','population':25000000,'fact':'capital city of Korea'},
 	}
